@@ -5,7 +5,7 @@ from pwn import *
 # 设置调试环境
 # context.log_level = 'debug'
 # 设置tmux程序
-# context.terminal = ['/usr/bin/tmux', 'splitw', '-h']
+gdb.context.terminal = ["konsole",'-e']
 
 p = process("./ret2text_32")
 elf = ELF("./ret2text_32")

